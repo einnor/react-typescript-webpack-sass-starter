@@ -7,10 +7,10 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/', // TODO
+    // publicPath: '/', // TODO
   },
   resolve: {
-    extensions: ['.js', '.ts', '.tsx']
+    extensions: ['.js', '.ts', '.tsx'],
   },
   module: {
     rules: [
@@ -38,7 +38,7 @@ module.exports = {
           // 'css-loader',
           {
             loader: 'css-loader',
-            options: { modules: true }
+            options: { modules: true },
           },
           // Compiles Sass to CSS
           'sass-loader',
