@@ -22,7 +22,10 @@
     "css-loader": "^3.5.3",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.3.0",
+    "husky": "^4.2.5",
     "node-sass": "^4.14.1",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "ts-loader": "^7.0.5",
@@ -36,5 +39,10 @@
   "dependencies": {
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
